@@ -223,9 +223,10 @@ ds = data_bundle.get_dataset('train')
 print(type(ds))
 print(type(data_bundle))
 
-if dataset_name == 'conll2003':
-    ds.concat(data_bundle.get_dataset('dev'))
-    data_bundle.delete_dataset('dev')
+# if dataset_name == 'conll2003':
+#     ds.concat(data_bundle.get_dataset('dev'))
+#     data_bundle.delete_dataset('dev')
+
 if save_model == 1:
     save_path = 'save_models/'
 else:
