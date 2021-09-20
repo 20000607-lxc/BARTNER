@@ -219,6 +219,10 @@ metric = Seq2SeqSpanMetric(eos_token_id, num_labels=len(label_ids), target_type=
 
 # todo note: merge !
 ds = data_bundle.get_dataset('train')
+
+print(type(ds))
+print(type(data_bundle))
+
 if dataset_name == 'conll2003':
     ds.concat(data_bundle.get_dataset('dev'))
     data_bundle.delete_dataset('dev')
