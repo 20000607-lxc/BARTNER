@@ -1,0 +1,87 @@
+Read cache from caches/data_facebook/bart-base_conll2003_word.pt.
+max_len_a:0.6, max_len:10
+In total 3 datasets:
+	test has 3453 instances.
+	train has 14041 instances.
+	dev has 3250 instances.
+
+The number of tokens in tokenizer  50265
+50269 50274
+<class 'fastNLP.core.dataset.DataSet'>
+<class 'fastNLP.io.data_bundle.DataBundle'>
+input fields after batch(if batch size is 2):
+	tgt_tokens: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 8]) 
+	src_tokens: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 11]) 
+	first: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 11]) 
+	src_seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+	tgt_seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+target fields after batch(if batch size is 2):
+	entities: (1)type:numpy.ndarray (2)dtype:object, (3)shape:(2,) 
+	tgt_tokens: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 8]) 
+	target_span: (1)type:numpy.ndarray (2)dtype:object, (3)shape:(2,) 
+	tgt_seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+
+training epochs started 2021-09-20-12-36-14-003280
+Evaluate data in 9.49 seconds!
+Evaluation on dev at Epoch 16/30. Step:14048/26340: 
+Seq2SeqSpanMetric: f=90.86, rec=91.32000000000001, pre=90.4, em=0.8488
+
+Evaluate data in 9.55 seconds!
+Evaluation on dev at Epoch 17/30. Step:14926/26340: 
+Seq2SeqSpanMetric: f=91.31, rec=91.86, pre=90.75999999999999, em=0.8526
+
+Evaluate data in 9.52 seconds!
+Evaluation on dev at Epoch 18/30. Step:15804/26340: 
+Seq2SeqSpanMetric: f=91.10000000000001, rec=91.67999999999999, pre=90.52, em=0.8517
+
+Evaluate data in 9.53 seconds!
+Evaluation on dev at Epoch 19/30. Step:16682/26340: 
+Seq2SeqSpanMetric: f=91.02, rec=91.66, pre=90.4, em=0.8497
+
+Evaluate data in 9.46 seconds!
+Evaluation on dev at Epoch 20/30. Step:17560/26340: 
+Seq2SeqSpanMetric: f=91.36, rec=91.75, pre=90.98, em=0.8569
+
+Evaluate data in 9.57 seconds!
+Evaluation on dev at Epoch 21/30. Step:18438/26340: 
+Seq2SeqSpanMetric: f=91.32000000000001, rec=92.0, pre=90.64999999999999, em=0.854
+
+Evaluate data in 9.58 seconds!
+Evaluation on dev at Epoch 22/30. Step:19316/26340: 
+Seq2SeqSpanMetric: f=91.27, rec=91.86999999999999, pre=90.67, em=0.8546
+
+Evaluate data in 9.53 seconds!
+Evaluation on dev at Epoch 23/30. Step:20194/26340: 
+Seq2SeqSpanMetric: f=91.27, rec=91.91, pre=90.64, em=0.8543
+
+Evaluate data in 9.68 seconds!
+Evaluation on dev at Epoch 24/30. Step:21072/26340: 
+Seq2SeqSpanMetric: f=91.33, rec=92.12, pre=90.55, em=0.8529
+
+Evaluate data in 9.57 seconds!
+Evaluation on dev at Epoch 25/30. Step:21950/26340: 
+Seq2SeqSpanMetric: f=91.27, rec=91.89, pre=90.66, em=0.8532
+
+Evaluate data in 9.54 seconds!
+Evaluation on dev at Epoch 26/30. Step:22828/26340: 
+Seq2SeqSpanMetric: f=91.46, rec=92.07, pre=90.86, em=0.8546
+
+Evaluate data in 9.55 seconds!
+Evaluation on dev at Epoch 27/30. Step:23706/26340: 
+Seq2SeqSpanMetric: f=91.41, rec=92.10000000000001, pre=90.72, em=0.8546
+
+Evaluate data in 9.54 seconds!
+Evaluation on dev at Epoch 28/30. Step:24584/26340: 
+Seq2SeqSpanMetric: f=91.43, rec=92.03, pre=90.83, em=0.8549
+
+Evaluate data in 9.69 seconds!
+Evaluation on dev at Epoch 29/30. Step:25462/26340: 
+Seq2SeqSpanMetric: f=91.34, rec=91.93, pre=90.75, em=0.8546
+
+Evaluate data in 9.52 seconds!
+Evaluation on dev at Epoch 30/30. Step:26340/26340: 
+Seq2SeqSpanMetric: f=91.51, rec=92.14, pre=90.9, em=0.8566
+
+
+In Epoch:30/Step:26340, got best dev performance:
+Seq2SeqSpanMetric: f=91.51, rec=92.14, pre=90.9, em=0.8566
