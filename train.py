@@ -37,7 +37,7 @@ args.save_model = 0
 
 # word: 生成word的start; bpe: 生成所有的bpe; span: 每一段按照start end生成; span_bpe: 每一段都是start的所有bpe，end的所有bpe
 args.target_type = 'word'
-args.bart_name = 'facebook/bart-base'
+args.bart_name = 'facebook/bart-large'
 args.schedule = 'linear'
 args.decoder_type = 'avg_feature'
 args.n_epochs = 30
@@ -219,9 +219,6 @@ metric = Seq2SeqSpanMetric(eos_token_id, num_labels=len(label_ids), target_type=
 
 # todo note: merge !
 ds = data_bundle.get_dataset('train')
-
-print(type(ds))
-print(type(data_bundle))
 
 # if dataset_name == 'conll2003':
 #     ds.concat(data_bundle.get_dataset('dev'))
