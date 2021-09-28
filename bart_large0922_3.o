@@ -1,0 +1,92 @@
+////note:without the joint train strategy! /////
+
+
+
+Save cache to caches/data_facebook/bart-large_conll2003_word.pt.
+max_len_a:0.6, max_len:10
+In total 3 datasets:
+	test has 3453 instances.
+	train has 14041 instances.
+	dev has 3453 instances.
+
+The number of tokens in tokenizer  50265
+50269 50274
+input fields after batch(if batch size is 2):
+	tgt_tokens: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 8]) 
+	src_tokens: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 11]) 
+	first: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 11]) 
+	src_seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+	tgt_seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+target fields after batch(if batch size is 2):
+	entities: (1)type:numpy.ndarray (2)dtype:object, (3)shape:(2,) 
+	tgt_tokens: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2, 8]) 
+	target_span: (1)type:numpy.ndarray (2)dtype:object, (3)shape:(2,) 
+	tgt_seq_len: (1)type:torch.Tensor (2)dtype:torch.int64, (3)shape:torch.Size([2]) 
+
+training epochs started 2021-09-21-13-21-20-756630
+Evaluate data in 17.99 seconds!
+Evaluation on dev at Epoch 16/30. Step:14048/26340: 
+Seq2SeqSpanMetric: f=92.75, rec=93.08, pre=92.42, em=0.8813
+
+Evaluate data in 17.74 seconds!
+Evaluation on dev at Epoch 17/30. Step:14926/26340: 
+Seq2SeqSpanMetric: f=92.46, rec=93.28999999999999, pre=91.64999999999999, em=0.8763
+
+Evaluate data in 17.83 seconds!
+Evaluation on dev at Epoch 18/30. Step:15804/26340: 
+Seq2SeqSpanMetric: f=92.64, rec=93.08999999999999, pre=92.17999999999999, em=0.8789
+
+Evaluate data in 17.82 seconds!
+Evaluation on dev at Epoch 19/30. Step:16682/26340: 
+Seq2SeqSpanMetric: f=92.54, rec=93.22, pre=91.86999999999999, em=0.8743
+
+Evaluate data in 17.92 seconds!
+Evaluation on dev at Epoch 20/30. Step:17560/26340: 
+Seq2SeqSpanMetric: f=92.53, rec=93.17, pre=91.91, em=0.8758
+
+Evaluate data in 17.66 seconds!
+Evaluation on dev at Epoch 21/30. Step:18438/26340: 
+Seq2SeqSpanMetric: f=92.81, rec=93.34, pre=92.28, em=0.8801
+
+Evaluate data in 17.81 seconds!
+Evaluation on dev at Epoch 22/30. Step:19316/26340: 
+Seq2SeqSpanMetric: f=92.78999999999999, rec=93.61, pre=91.97999999999999, em=0.8801
+
+Evaluate data in 17.66 seconds!
+Evaluation on dev at Epoch 23/30. Step:20194/26340: 
+Seq2SeqSpanMetric: f=92.97, rec=93.67999999999999, pre=92.27, em=0.8816
+
+Evaluate data in 17.66 seconds!
+Evaluation on dev at Epoch 24/30. Step:21072/26340: 
+Seq2SeqSpanMetric: f=92.83, rec=93.56, pre=92.12, em=0.881
+
+Evaluate data in 17.83 seconds!
+Evaluation on dev at Epoch 25/30. Step:21950/26340: 
+Seq2SeqSpanMetric: f=92.56, rec=93.08, pre=92.05, em=0.8775
+
+Evaluate data in 17.94 seconds!
+Evaluation on dev at Epoch 26/30. Step:22828/26340: 
+Seq2SeqSpanMetric: f=92.78999999999999, rec=93.54, pre=92.05, em=0.8787
+
+Evaluate data in 17.93 seconds!
+Evaluation on dev at Epoch 27/30. Step:23706/26340: 
+Seq2SeqSpanMetric: f=92.64, rec=93.36, pre=91.93, em=0.8769
+
+Evaluate data in 17.97 seconds!
+Evaluation on dev at Epoch 28/30. Step:24584/26340: 
+Seq2SeqSpanMetric: f=92.74, rec=93.36, pre=92.12, em=0.8781
+
+Evaluate data in 17.9 seconds!
+Evaluation on dev at Epoch 29/30. Step:25462/26340: 
+Seq2SeqSpanMetric: f=92.75999999999999, rec=93.4, pre=92.14, em=0.8792
+
+Evaluate data in 17.85 seconds!
+Evaluation on dev at Epoch 30/30. Step:26340/26340: 
+Seq2SeqSpanMetric: f=92.78999999999999, rec=93.4, pre=92.19000000000001, em=0.8798
+
+
+
+
+# results for removing the joint train with dev data strategy! why is it higher than train with dev data ??
+In Epoch:23/Step:20194, got best dev performance:
+Seq2SeqSpanMetric: f=92.97, rec=93.67999999999999, pre=92.27, em=0.8816

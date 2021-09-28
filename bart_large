@@ -5,7 +5,7 @@
 #SBATCH -t 0-48:00
 #SBATCH -p rtx8000
 #SBATCH --mem=200000
-#SBATCH -o /scratch/zt2080/shizhe/eres/BARTNER/bart_large0922.o
+#SBATCH -o /scratch/zt2080/shizhe/eres/BARTNER/bart_large0922_3.o
 #SBATCH -e /scratch/zt2080/shizhe/eres/BARTNER/bart_large0922.e
 #SBATCH --mail-type=END,FAIL
 #SBATCH --cpus-per-task=8
