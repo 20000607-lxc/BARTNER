@@ -33,7 +33,7 @@ class Seq2SeqSpanMetric(MetricBase):
         for i, (ts, ps) in enumerate(zip(target_span, pred.tolist())):
             em = 0
             ps = ps[:pred_seq_len[i]]
-            if pred_seq_len[i]==target_seq_len[i]:
+            if pred_seq_len[i] == target_seq_len[i]:
                 em = int(tgt_tokens[i, :target_seq_len[i]].eq(pred[i, :target_seq_len[i]]).sum().item()==target_seq_len[i])
             self.em += em
             pairs = []

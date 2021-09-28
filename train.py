@@ -217,7 +217,7 @@ sampler = None
 metric = Seq2SeqSpanMetric(eos_token_id, num_labels=len(label_ids), target_type=target_type)
 
 
-# todo note: merge !
+# todo note: do not merge !
 ds = data_bundle.get_dataset('train')
 
 # if dataset_name == 'conll2003':
